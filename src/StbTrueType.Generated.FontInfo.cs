@@ -833,7 +833,8 @@ namespace StbTrueTypeSharp
 					case 0x0B:
 						if (subr_stack_height <= 0)
 							return (int)(0);
-						b = (stbtt__buf)(subr_stack[--subr_stack_height]);
+						int subr_stack_height2 = --subr_stack_height;
+						b = (stbtt__buf)(subr_stack[subr_stack_height2]);
 						clear_stack = (int)(0);
 						break;
 					case 0x0E:

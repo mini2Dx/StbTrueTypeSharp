@@ -264,7 +264,8 @@ namespace StbTrueTypeSharp
 					}
 					else
 					{
-						step = &((*step)->next);
+						stbtt__active_edge* z2 = *step;
+						step = &(z2->next);
 					}
 				} while (e->y0 <= scan_y_bottom)
 				{
@@ -308,7 +309,8 @@ namespace StbTrueTypeSharp
 				{
 					stbtt__active_edge* z = *step;
 					z->fx += (float)(z->fdx);
-					step = &((*step)->next);
+					stbtt__active_edge* z2 = *step;
+					step = &(z2->next);
 				}
 				++y;
 				++j;
