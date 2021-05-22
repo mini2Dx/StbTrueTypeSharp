@@ -9,7 +9,7 @@
     <NoWarn>NU1701</NoWarn>
     <AssemblyName>StbTrueTypeSharp</AssemblyName>
     <RootNamespace>StbTrueTypeSharp</RootNamespace>
-    <Version>1.24.7</Version>
+    <Version>1.24.7-mini2Dx</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
